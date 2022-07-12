@@ -1,0 +1,55 @@
+/* Слайдер */
+.galery .slick-slider {
+  position: relative;
+}
+/* Слайдер запущен */
+.galery .slick-slider.slick-initialized {
+  position: relative;
+}
+/* Слайдер с точками */
+.galery-header .slick-dots {
+  display: inline-block;
+  text-align: right;
+}
+/* Активная точка */
+.galery-header .slick-dots li {
+  opacity: 0.5;
+  width: 100px;
+  height: 4px;
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 4px;
+  margin: 0px;
+}
+.galery-header .slick-dots button {
+  width: 100%;
+  list-style: none;
+  opacity: 0;
+}
+.galery-header .slick-dots li.slick-active {
+  top: -2px;
+  height: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 1;
+  background-color: rgba(34, 117, 77, 0.75);
+}
+/* Ограничивающая оболочка */
+.galery .slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.galery.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка не активная */

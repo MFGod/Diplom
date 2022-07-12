@@ -1,44 +1,53 @@
 
 /* Слайдер */
-.slick-slider{
+.galery .slick-slider{
 	position: relative;
 	
 
 }
 /* Слайдер запущен */
-.katalog .slick-slider.slick-initialized{}
+.galery .slick-slider.slick-initialized{
+   position: relative;
+}
 
 
 /* Слайдер с точками */
-.katalog .slick-dotted .slick-slider{
-
+.galery-header .slick-dotted .slick-slider{
+   
+}
+.galery-header .slick-dots {
+display: inline-block;
+text-align: right;
 }
 /* Активная точка */
-.katalog .slick-dots li{
+.galery-header .slick-dots li{
 	opacity: 0.5;
-	margin-top: 4px;
-	margin-bottom: 80px;
 	width: 100px;
-	height: 10px;
+	height: 4px;
 	background-color: rgba(155, 155, 155, 0.5);
 	border-radius:4px;
+   margin: 0px;
 }
-.katalog .slick-dots button{
+.galery-header .slick-dots button{
+   width: 100%;
+
 	list-style: none;
 	opacity: 0;
 	
 }
-.katalog .slick-dots li.slick-active {
+.galery-header .slick-dots li.slick-active {
+   top: -2px;
+   height: 8px;
 	transition: all 0.2s;
 	opacity: 1;
 	background-color: rgba(34, 117, 77, 0.75);
 }
 /* Ограничивающая оболочка */
-.katalog .slick-list {
+.galery .slick-list {
 	overflow:hidden;
 }
 /* Лента слайдов */
-.katalog .slick-track{
+.galery.slick-track{
 	display: flex;
 	align-items:flex-start;
 }
@@ -54,28 +63,9 @@
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
 /* Стрелка */
-.katalog .slick-arrow{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-100%);
-	border: none;
-	z-index: 99;
-	width: 30px;
-	height: 30px;
+.galery .slick-arrow{
 }
-/*Левая*/
- .prev{
- 	left: -45px;
-	background: url(../img/ArrowL.svg) center no-repeat;
-	background-size: 100%;
 
-}
-/*Правая*/
-.next{
-	right: -45px;
-	background: url(../img/ArrowR.svg) center no-repeat;
-	background-size: 100%;
-}
 
 
 /* Стрелка не активная */
